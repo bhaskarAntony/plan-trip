@@ -113,7 +113,7 @@ const ChatBot: React.FC = () => {
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.2 }}
             style={{bottom:"0px", zIndex:"1020"}}
-            className="fixed  right-0 w-full md:w-[400px] h-[600px] bg-white rounded-t-2xl md:rounded-2xl shadow-2xl z-50 md:bottom-24 md:right-8 flex flex-col overflow-hidden"
+            className="fixed  right-0 w-full md:w-100 h-[600px] bg-white rounded-t-2xl md:rounded-2xl shadow-2xl z-50 md:bottom-24 md:right-8 flex flex-col overflow-hidden"
           >
             <div className="flex items-center justify-between p-4 border-b">
               <div className="flex items-center">
