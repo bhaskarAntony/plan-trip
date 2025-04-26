@@ -50,13 +50,13 @@ const Footer: React.FC = () => {
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-200 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207" />
                 </svg>
-                <span className="text-primary-200">svhsreunion2025@gmail.com</span>
+                {/* <span className="text-primary-200">svhsreunion2025@gmail.com</span> */}
               </li>
               <li className="flex items-start">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-200 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
                 </svg>
-                <span className="text-primary-200">+91 9876543210</span>
+                <span className="text-primary-200">+91 99001 97160</span>
               </li>
               <li className="flex items-start">
                 <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-primary-200 mr-3 mt-0.5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -78,9 +78,9 @@ const Footer: React.FC = () => {
             &copy; {new Date().getFullYear()} SVHS 2009 Batch. All rights reserved.
           </p>
           <div className="flex items-center text-primary-300 text-sm">
-            <span>Made with</span>
+            <span>Made </span>
             <Heart className="h-4 w-4 mx-1 text-accent-500" />
-            <span>by </span>
+            <span>by Bhaskar Antony - <a href="tel:9606729320">9606729320</a></span>
           </div>
         </div>
       </div>
