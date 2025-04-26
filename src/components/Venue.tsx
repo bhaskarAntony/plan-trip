@@ -88,7 +88,7 @@ const Venue: React.FC = () => {
                 <div>
                   <h4 className="font-bold text-secondary-800 mb-1">Directions</h4>
                   <a 
-                    href="https://maps.google.com" 
+                    href="https://maps.app.goo.gl/5P9qN71zrLufTEKdA" 
                     target="_blank"
                     rel="noopener noreferrer"
                     className="text-primary-600 hover:text-primary-700 hover:underline inline-flex items-center"

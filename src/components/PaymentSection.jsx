@@ -98,7 +98,16 @@ const PaymentSection = () => {
                     className="w-full h-full object-contain"
                   />
                 </div>
-                <p className="text-gray-700 mb-1">Scan with any UPI app</p>
+                <p className="text-gray-700 mb-1">Scan with any UPI app</p><br />
+                <div className="bg-blue-50 py-3 px-4 rounded-lg inline-flex items-center gap-2 mb-4">
+                  <span className="font-medium text-blue-800">Sathish ms - {phoneNumber}</span>
+                  <button
+                    onClick={() => handleCopy(phoneNumber)}
+                    className="text-blue-600 hover:text-blue-800 transition-colors"
+                  >
+                    {copied ? <CheckCircle size={16} /> : <Copy size={16} />}
+                  </button>
+                </div>
                 <div className="flex items-center gap-2">
                   {/* <span className="font-medium text-blue-800">+91 99001 97160</span> */}
                   {/* <button
