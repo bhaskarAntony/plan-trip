@@ -45,15 +45,13 @@ const Venue: React.FC = () => {
             variants={fadeInUp}
             transition={{ duration: 0.6, delay: 0.3 }}
           >
-            <iframe 
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3885.0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTLCsDM4JzIyLjIiTiA3N8KwMzgnMTAuMiJF!5e0!3m2!1sen!2sin!4v1626267772111!5m2!1sen!2sin" 
-              width="100%" 
+           
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d124240.69204253396!2d77.9130547!3d13.3177958!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bb2012f7a3cbc3f%3A0xda6e01dce4f07a22!2sGK%20Hill%20View%20Resort!5e0!3m2!1sen!2sin!4v1745667134504!5m2!1sen!2sin"   width="100%" 
               height="100%" 
               style={{ border: 0 }} 
               allowFullScreen 
               loading="lazy"
-              title="GK Hill View Resort location"
-            ></iframe>
+              title="GK Hill View Resort location"></iframe>
           </motion.div>
           
           <motion.div 
@@ -81,7 +79,7 @@ const Venue: React.FC = () => {
                 <Phone className="text-primary-600 h-6 w-6 mt-1 mr-4 flex-shrink-0" />
                 <div>
                   <h4 className="font-bold text-secondary-800 mb-1">Contact</h4>
-                  <p className="text-secondary-600">+91 9876543210</p>
+                  <p className="text-secondary-600">+91 99001 97160</p>
                 </div>
               </div>
               

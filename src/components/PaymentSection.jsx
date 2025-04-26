@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Download, Copy, Share2, Phone, ArrowRight, CheckCircle } from 'lucide-react';
+import qrCodeImage from '../assets/qr_code.jpg'
 
 const PaymentSection = () => {
   const [selectedMethod, setSelectedMethod] = useState('upi');
@@ -7,7 +8,7 @@ const PaymentSection = () => {
   const [showSuccess, setShowSuccess] = useState(false);
 
   const upiId = 'svhsreunion@ybl';
-  const phoneNumber = '+91 9876543210';
+  const phoneNumber = '+91 99001 97160';
 
   const handleCopy = (text) => {
     navigator.clipboard.writeText(text);
@@ -32,7 +33,7 @@ const PaymentSection = () => {
     )}`;
 
     const link = document.createElement('a');
-    link.href = qrCodeUrl;
+    link.href = qrCodeImage;
     link.download = 'SVHS-Reunion-QR.png';
     document.body.appendChild(link);
     link.click();
@@ -92,22 +93,20 @@ const PaymentSection = () => {
               <div className="flex flex-col items-center mb-6">
                 <div className="w-48 h-48 bg-white rounded-lg shadow-md mb-4 flex items-center justify-center overflow-hidden">
                   <img
-                    src={`https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${encodeURIComponent(
-                      `upi://pay?pa=${upiId}&pn=SVHS Reunion&am=`
-                    )}`}
+                    src={qrCodeImage}
                     alt="QR Code for payment"
                     className="w-full h-full object-contain"
                   />
                 </div>
                 <p className="text-gray-700 mb-1">Scan with any UPI app</p>
                 <div className="flex items-center gap-2">
-                  <span className="font-medium text-blue-800">{upiId}</span>
-                  <button
+                  {/* <span className="font-medium text-blue-800">+91 99001 97160</span> */}
+                  {/* <button
                     onClick={() => handleCopy(upiId)}
                     className="text-blue-600 hover:text-blue-800 transition-colors"
                   >
                     {copied ? <CheckCircle size={16} /> : <Copy size={16} />}
-                  </button>
+                  </button> */}
                 </div>
               </div>
 
@@ -173,13 +172,13 @@ const PaymentSection = () => {
             </div>
           )}
 
-          <button
+          {/* <button
             onClick={simulatePayment}
             className="w-full py-4 bg-blue-600 text-white font-medium rounded-lg flex items-center justify-center gap-2 hover:bg-blue-700 transition-colors shadow-md"
           >
             <span>Pay Now</span>
             <ArrowRight size={18} />
-          </button>
+          </button> */}
 
           {showSuccess && (
             <div className="mt-4 p-3 bg-green-100 text-green-700 rounded-lg flex items-center gap-2 animate-fade-in">
@@ -190,7 +189,7 @@ const PaymentSection = () => {
         </div>
 
         <div className="text-center text-gray-600 text-sm">
-          <p>Having trouble with payment? Contact our treasurer at treasurer@svhsreunion.com</p>
+          <p>Having trouble with payment? Contact our treasurer at +91 99001 97160</p>
         </div>
       </div>
     </section>

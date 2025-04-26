@@ -23,14 +23,14 @@ const Hero: React.FC = () => {
       ref={ref}
     >
       <div 
-        className="absolute inset-0 z-0 bg-cover bg-center opacity-20"
+        className="absolute inset-0 z-0 bg-cover bg-center"
         style={{ 
-          backgroundImage: `url(https://images.pexels.com/photos/935949/pexels-photo-935949.jpeg)`,
-          filter: 'blur(3px)'
+          backgroundImage: `url(https://static.vecteezy.com/system/resources/previews/002/190/454/non_2x/vertical-banner-with-red-travel-handbag-on-red-background-vector.jpg)`,
+          filter: 'blur(30px)'
         }}
       ></div>
       
-      <div className="absolute inset-0 bg-gradient-to-b from-primary-700/40 to-primary-900/60 z-10"></div>
+      <div className="absolute inset-0  z-10"></div>
       
       <div className="relative z-20 w-full px-4">
         <motion.div 
@@ -40,13 +40,13 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <motion.div 
-            className="bg-white/10 backdrop-blur-lg rounded-3xl p-6 mb-8"
+            className="bg-white/10 backdrop-blur-xl rounded-3xl p-6 mb-8 bg-black mt-20"
             initial={{ scale: 0.9, opacity: 0 }}
             animate={loaded ? { scale: 1, opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
           >
             <h1 className="text-4xl md:text-5xl font-serif font-bold text-white mb-4 mt-20">
-              SVHS 2009 Batch Reunion
+            Sri venkateshara Vidya Samshte 2009 Batch Reunion
             </h1>
             <p className="text-xl text-white/90 mb-6">
               16 Years of Memories, 1 Unforgettable Day
@@ -59,15 +59,15 @@ const Hero: React.FC = () => {
             animate={loaded ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-4">
+            <div className="bg-white/10 bg-black rounded-2xl p-4">
               <Calendar className="w-8 h-8 text-white mb-2 mx-auto" />
               <p className="text-white text-sm">May 18, 2025</p>
             </div>
-            <div className="bg-white/10 backdrop-blur-lg rounded-2xl p-4">
+            <div className="bg-white/10 bg-black rounded-2xl p-4">
               <Clock className="w-8 h-8 text-white mb-2 mx-auto" />
               <p className="text-white text-sm">9:00 AM - 5:30 PM</p>
             </div>
-            <div className="col-span-2 bg-white/10 backdrop-blur-lg rounded-2xl p-4">
+            <div className="col-span-2 bg-white/10 bg-black rounded-2xl p-4">
               <MapPin className="w-8 h-8 text-white mb-2 mx-auto" />
               <p className="text-white text-sm">GK Hill View Resort</p>
             </div>
@@ -78,11 +78,12 @@ const Hero: React.FC = () => {
             initial={{ scale: 0.9, opacity: 0 }}
             animate={loaded ? { scale: 1, opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.8 }}
+            
           >
             <CountdownTimer />
           </motion.div>
           
-          <motion.div 
+          {/* <motion.div 
             className="space-y-4"
             initial={{ y: 20, opacity: 0 }}
             animate={loaded ? { y: 0, opacity: 1 } : {}}
@@ -96,14 +97,14 @@ const Hero: React.FC = () => {
             </a>
             <a 
               href="#about" 
-              className="block w-full bg-white/20 backdrop-blur-lg text-white py-4 rounded-xl font-medium hover:bg-white/30 transition-colors"
+              className="block w-full bg-white/20 bg-black text-white py-4 rounded-xl font-medium hover:bg-white/30 transition-colors"
             >
               Learn More
             </a>
-          </motion.div>
+          </motion.div> */}
           
           <motion.div
-            className="mt-8 text-white/80 flex items-center justify-center text-sm"
+            className="mt-8 text-white/80 flex items-center justify-center text-sm mb-10"
             initial={{ opacity: 0 }}
             animate={loaded ? { opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 1.2 }}

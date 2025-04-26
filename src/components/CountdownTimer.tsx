@@ -53,12 +53,12 @@ const CountdownTimer: React.FC = () => {
           key={block.label} 
           className="flex flex-col items-center"
         >
-          <div className="bg-white w-16 h-16 md:w-20 md:h-20 rounded-lg shadow-md flex items-center justify-center mb-2">
-            <span className="text-2xl md:text-3xl font-bold text-primary-700">
+          <div className="bg-black text-white w-16 h-16 md:w-20 md:h-20 rounded-lg shadow-md flex items-center justify-center mb-2">
+            <span className="text-2xl md:text-3xl font-bold text-primary-700" style={{color:"#fff"}}>
               {block.value < 10 ? `0${block.value}` : block.value}
             </span>
           </div>
-          <span className="text-xs md:text-sm text-secondary-600">{block.label}</span>
+          <span className="text-xs md:text-sm text-secondary-600" style={{color:"#fff"}}> {block.label}</span>
         </div>
       ))}
     </div>

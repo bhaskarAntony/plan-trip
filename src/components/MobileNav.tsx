@@ -7,7 +7,7 @@ const MobileNav: React.FC = () => {
     { icon: <Calendar size={24} />, label: 'Schedule', href: '#schedule' },
     { icon: <MapPin size={24} />, label: 'Venue', href: '#venue' },
     { icon: <Users size={24} />, label: 'Activities', href: '#activities' },
-    { icon: <MessageSquare size={24} />, label: 'Chat', href: '#chat' },
+    // { icon: <MessageSquare size={24} />, label: 'Chat', href: '#chat' },
   ];
 
   return (

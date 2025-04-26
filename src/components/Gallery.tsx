@@ -99,7 +99,7 @@ const Gallery: React.FC = () => {
             Do you have photos from our school days? Share them in our WhatsApp group or bring them to the reunion to add to our collection of memories.
           </p>
           <a 
-            href="https://wa.me/919876543210" 
+            href="https://chat.whatsapp.com/K854mMWjMk5LtQbtKQqHlf" 
             target="_blank"
             rel="noopener noreferrer"
             className="btn btn-outline inline-flex items-center"

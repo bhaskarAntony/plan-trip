@@ -52,7 +52,8 @@ const ChatBot: React.FC = () => {
     setIsLoading(true);
 
     try {
-      const model = genAI.getGenerativeModel({ model: 'gemini-pro' });
+      const model = genAI.getGenerativeModel({ model: 'gemini-1.5-flash' }
+      );
       
       const prompt = `You are a helpful assistant for the SVHS 2009 Batch Reunion event.
         Event details:
@@ -72,6 +73,8 @@ const ChatBot: React.FC = () => {
         - Lunch buffet
         - Evening hi-tea
         - Access to all activities
+
+        -location:https://maps.app.goo.gl/5P9qN71zrLufTEKdA => give un href
         
         Please provide friendly, concise responses focused on the reunion details.
         
@@ -109,7 +112,8 @@ const ChatBot: React.FC = () => {
             animate={{ opacity: 1, y: 0 }}
             exit={{ opacity: 0, y: 20 }}
             transition={{ duration: 0.2 }}
-            className="fixed bottom-0 right-0 w-full md:w-[400px] h-[600px] bg-white rounded-t-2xl md:rounded-2xl shadow-2xl z-50 md:bottom-24 md:right-8 flex flex-col overflow-hidden"
+            style={{bottom:"0px", zIndex:"1020"}}
+            className="fixed  right-0 w-full md:w-[400px] h-[600px] bg-white rounded-t-2xl md:rounded-2xl shadow-2xl z-50 md:bottom-24 md:right-8 flex flex-col overflow-hidden"
           >
             <div className="flex items-center justify-between p-4 border-b">
               <div className="flex items-center">
@@ -188,7 +192,7 @@ const ChatBot: React.FC = () => {
               <div ref={messagesEndRef} />
             </div>
 
-            <form onSubmit={handleSubmit} className="p-4 border-t border-gray-200">
+            <form onSubmit={handleSubmit} className="p-4 border-t border-gray-200" style={{marginTop:"50px"}}>
               <div className="flex space-x-2">
                 <input
                   type="text"

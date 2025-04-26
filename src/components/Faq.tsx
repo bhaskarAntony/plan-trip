@@ -14,8 +14,9 @@ const FaqItem: React.FC<FaqItemProps> = ({ question, answer }) => {
   return (
     <div className="border-b border-secondary-200 last:border-0">
       <button
-        className="flex justify-between items-center w-full py-5 text-left"
+        className="flex justify-between items-center w-full py-5 text-left p-"
         onClick={() => setIsOpen(!isOpen)}
+        style={{padding:"20px"}}
       >
         <h3 className="text-lg font-medium text-primary-700">{question}</h3>
         <span className="ml-4 flex-shrink-0">
@@ -128,7 +129,7 @@ const Faq: React.FC = () => {
             Feel free to reach out to us directly if you have any other questions or concerns about the reunion.
           </p>
           <a 
-            href="https://wa.me/919876543210" 
+            href="tel:99001 97160" 
             target="_blank"
             rel="noopener noreferrer"
             className="btn bg-white text-primary-700 hover:bg-primary-50 inline-flex items-center"
