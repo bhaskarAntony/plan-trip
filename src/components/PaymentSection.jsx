@@ -8,7 +8,7 @@ const PaymentSection = () => {
   const [showSuccess, setShowSuccess] = useState(false);
 
   const upiId = 'svhsreunion@ybl';
-  const phoneNumber = '+91 99001 97160';
+  const phoneNumber = '+919008054165';
 
   const handleCopy = (text) => {
     navigator.clipboard.writeText(text);
@@ -135,10 +135,10 @@ const PaymentSection = () => {
               <div className="text-center mb-6">
                 <Phone size={32} className="text-blue-600 mx-auto mb-2" />
                 <h3 className="font-semibold text-gray-800 mb-1">Phone Payment</h3>
-                <p className="text-gray-600 mb-4">Send payment directly to:</p>
+                <p className="text-gray-600 mb-4">Send payment directly to: Sathish ms</p>
 
                 <div className="bg-blue-50 py-3 px-4 rounded-lg inline-flex items-center gap-2 mb-4">
-                  <span className="font-medium text-blue-800">{phoneNumber}</span>
+                  <span className="font-medium text-blue-800">Sathish ms - {phoneNumber}</span>
                   <button
                     onClick={() => handleCopy(phoneNumber)}
                     className="text-blue-600 hover:text-blue-800 transition-colors"
@@ -189,7 +189,7 @@ const PaymentSection = () => {
         </div>
 
         <div className="text-center text-gray-600 text-sm">
-          <p>Having trouble with payment? Contact our treasurer at +91 99001 97160</p>
+          <p>Having trouble with payment? Contact our treasurer at +91 9008054165</p>
         </div>
       </div>
     </section>
