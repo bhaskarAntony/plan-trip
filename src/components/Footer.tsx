@@ -80,7 +80,7 @@ const Footer: React.FC = () => {
           <div className="flex items-center text-primary-300 text-sm">
             <span>Made with</span>
             <Heart className="h-4 w-4 mx-1 text-accent-500" />
-            <span>by SVHS 2009 Batch Organizing Committee</span>
+            <span>by </span>
           </div>
         </div>
       </div>

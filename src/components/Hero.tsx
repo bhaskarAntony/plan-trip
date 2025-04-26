@@ -40,7 +40,7 @@ const Hero: React.FC = () => {
           transition={{ duration: 0.8, delay: 0.2 }}
         >
           <motion.div 
-            className="bg-white/10 backdrop-blur-xl rounded-3xl p-6 mb-8 bg-black mt-20"
+            className=" rounded-3xl p-6 mb-8 bg-black mt-20"
             initial={{ scale: 0.9, opacity: 0 }}
             animate={loaded ? { scale: 1, opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.4 }}
@@ -59,15 +59,15 @@ const Hero: React.FC = () => {
             animate={loaded ? { y: 0, opacity: 1 } : {}}
             transition={{ duration: 0.6, delay: 0.6 }}
           >
-            <div className="bg-white/10 bg-black rounded-2xl p-4">
+            <div className=" bg-black rounded-2xl p-4">
               <Calendar className="w-8 h-8 text-white mb-2 mx-auto" />
               <p className="text-white text-sm">May 18, 2025</p>
             </div>
-            <div className="bg-white/10 bg-black rounded-2xl p-4">
+            <div className=" bg-black rounded-2xl p-4">
               <Clock className="w-8 h-8 text-white mb-2 mx-auto" />
               <p className="text-white text-sm">9:00 AM - 5:30 PM</p>
             </div>
-            <div className="col-span-2 bg-white/10 bg-black rounded-2xl p-4">
+            <div className="col-span-2  bg-black rounded-2xl p-4">
               <MapPin className="w-8 h-8 text-white mb-2 mx-auto" />
               <p className="text-white text-sm">GK Hill View Resort</p>
             </div>
