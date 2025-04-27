@@ -79,7 +79,7 @@ const Venue: React.FC = () => {
                 <Phone className="text-primary-600 h-6 w-6 mt-1 mr-4 flex-shrink-0" />
                 <div>
                   <h4 className="font-bold text-secondary-800 mb-1">Contact</h4>
-                  <p className="text-secondary-600">+91 9008054165</p>
+                  <p className="text-secondary-600">+91 99001 97160</p>
                 </div>
               </div>
               

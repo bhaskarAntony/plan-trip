@@ -198,7 +198,7 @@ const PaymentSection = () => {
         </div>
 
         <div className="text-center text-gray-600 text-sm">
-          <p>Having trouble with payment? Contact our treasurer at +91 9008054165</p>
+          <p>Having trouble with payment? Contact our treasurer at +91 99001 97160</p>
         </div>
       </div>
     </section>
